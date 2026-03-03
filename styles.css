@@ -209,3 +209,31 @@ nav {
 .edu-meta { font-size: 0.68rem; color: var(--muted); }
 
 
+#experience { background: var(--bg2); padding: 6rem 0; }
+#experience .inner { max-width: 1080px; margin: 0 auto; padding: 0 3rem; }
+.exp-list { display: flex; flex-direction: column; gap: 1.2rem; }
+.exp-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: 10px; padding: 1.8rem;
+  display: grid; grid-template-columns: auto 1fr;
+  gap: 1.5rem; align-items: start;
+  transition: border-color 0.22s, transform 0.22s;
+}
+.exp-card:hover { border-color: rgba(79,255,176,0.22); transform: translateY(-3px); }
+.exp-logo { width: 48px; height: 48px; border-radius: 8px; background: var(--bg); border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; font-size: 1.4rem; flex-shrink: 0; }
+.exp-role { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 700; color: var(--white); margin-bottom: 0.2rem; }
+.exp-meta { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; margin-bottom: 0.8rem; }
+.exp-company { font-size: 0.75rem; color: var(--accent); }
+.exp-date { font-size: 0.68rem; color: var(--muted); letter-spacing: 0.05em; }
+.exp-location { font-size: 0.68rem; color: var(--muted); }
+.exp-points { list-style: none; display: flex; flex-direction: column; gap: 0.4rem; }
+.exp-points li { font-size: 0.76rem; color: var(--muted); line-height: 1.8; padding-left: 1.2rem; position: relative; }
+.exp-points li::before { content: '›'; position: absolute; left: 0; color: var(--accent); }
+
+
+.skills-cats { display: flex; flex-direction: column; gap: 2rem; }
+.skill-group-title { font-size: 0.62rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--accent2); margin-bottom: 0.8rem; }
+.skill-chips { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.chip { font-size: 0.72rem; padding: 0.4rem 0.9rem; border: 1px solid var(--border); border-radius: 4px; color: var(--muted); background: var(--card); transition: all 0.18s; cursor: none; }
+.chip:hover { border-color: var(--accent); color: var(--accent); background: rgba(79,255,176,0.04); transform: translateY(-1px); }
+.chip.hl { border-color: rgba(79,255,176,0.25); color: var(--text); }

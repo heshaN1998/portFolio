@@ -189,3 +189,23 @@ nav {
   transition: all 0.16s ease;
   opacity: 0.55;
 }
+
+
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+.about-text p { font-size: 0.82rem; line-height: 2.1; color: var(--muted); margin-bottom: 1rem; }
+.about-text p strong { color: var(--text); }
+.about-links { display: flex; gap: 1rem; margin-top: 1.5rem; flex-wrap: wrap; }
+.a-link { font-size: 0.7rem; color: var(--accent2); letter-spacing: 0.06em; text-decoration: none; border-bottom: 1px solid rgba(0,201,255,0.3); padding-bottom: 1px; transition: border-color 0.2s; }
+.a-link:hover { border-color: var(--accent2); }
+.stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--border); border: 1px solid var(--border); }
+.stat { background: var(--card); padding: 1.4rem; transition: background 0.2s; }
+.stat:hover { background: #13172a; }
+.stat-n { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; color: var(--accent); line-height: 1; }
+.stat-l { font-size: 0.62rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); margin-top: 0.35rem; }
+.edu-block { margin-top: 2rem; padding: 1.4rem; border: 1px solid var(--border); background: var(--card); border-radius: 8px; transition: border-color 0.2s; }
+.edu-block:hover { border-color: rgba(79,255,176,0.2); }
+.edu-title { font-family: 'Syne', sans-serif; font-size: 0.9rem; font-weight: 700; color: var(--white); margin-bottom: 0.3rem; }
+.edu-sub { font-size: 0.72rem; color: var(--accent2); margin-bottom: 0.2rem; }
+.edu-meta { font-size: 0.68rem; color: var(--muted); }
+
+

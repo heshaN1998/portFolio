@@ -276,5 +276,14 @@ footer { border-top: 1px solid var(--border); padding: 1.8rem 3rem; display: fle
 .f-name span { color: var(--accent); }
 
 
-.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
-.reveal.visible { opacity: 1; transform: none; }
+
+
+@media (max-width: 768px) {
+  nav { padding: 1.1rem 1.5rem; }
+  .nav-links { display: none; }
+  .section { padding: 4rem 1.5rem; }
+  .about-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  .contact-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+  #experience .inner, #contact-section .inner { padding: 0 1.5rem; }
+  footer { flex-direction: column; gap: 0.5rem; text-align: center; padding: 1.5rem; }
+}

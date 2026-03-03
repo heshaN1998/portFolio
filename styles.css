@@ -269,3 +269,12 @@ nav {
 .proj-desc { font-size: 0.76rem; color: var(--muted); line-height: 1.85; flex: 1; margin-bottom: 1rem; }
 .proj-stack { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .stack-tag { font-size: 0.62rem; padding: 0.2rem 0.55rem; background: rgba(255,255,255,0.04); border: 1px solid var(--border); border-radius: 3px; color: var(--muted); }
+
+
+footer { border-top: 1px solid var(--border); padding: 1.8rem 3rem; display: flex; align-items: center; justify-content: space-between; font-size: 0.68rem; color: var(--muted); letter-spacing: 0.05em; }
+.f-name { font-family: 'Syne', sans-serif; font-size: 1rem; font-weight: 800; color: var(--white); }
+.f-name span { color: var(--accent); }
+
+
+.reveal { opacity: 0; transform: translateY(22px); transition: opacity 0.65s ease, transform 0.65s ease; }
+.reveal.visible { opacity: 1; transform: none; }

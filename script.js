@@ -8,3 +8,11 @@ document.addEventListener('mousemove', function(e) {
   cur.style.left = (mx - 4.5) + 'px';
   cur.style.top  = (my - 4.5) + 'px';
 });
+
+(function animateRing() {
+  rx += (mx - rx - 17) * 0.13;
+  ry += (my - ry - 17) * 0.13;
+  ring.style.left = rx + 'px';
+  ring.style.top  = ry + 'px';
+  requestAnimationFrame(animateRing);
+})();
